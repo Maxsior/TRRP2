@@ -1,0 +1,5 @@
+.idea/
+venv/
+__pycache__/
+rabbitmq_server-3.8.14/
+.DS_Store
