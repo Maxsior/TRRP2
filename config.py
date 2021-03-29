@@ -1,11 +1,15 @@
+import os
+
 db = {
-    "host": "remotemysql.com",
-    "port": 3306,
-    "database": "5l1S2yM8RU",
-    "user": "5l1S2yM8RU",
-    "password": "CeZkotNGI7",
+    "host": os.getenv('DB_HOST'),
+    "port": int(os.getenv('DB_PORT')),
+    "database": os.getenv('DB_NAME'),
+    "user": os.getenv('DB_USER'),
+    "password": os.getenv('DB_PASSWORD'),
 }
 
 host = 'localhost'
 
-addr = "localhost", 9998
+addr = "localhost", 9999
+
+rsa_length = 4096
